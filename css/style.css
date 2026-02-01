@@ -1,0 +1,66 @@
+/* Base Layout */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f5 url("../images/museum-bg.svg") no-repeat center top;
+  background-size: cover;
+  color: #222;
+}
+
+/* Top Banner */
+.top-bar {
+  background-color: rgba(30, 60, 50, 0.9);
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Navigation */
+.main-nav {
+  background-color: #e2e8e4;
+  padding: 10px;
+  text-align: center;
+}
+
+.main-nav button {
+  margin: 5px;
+  padding: 10px 18px;
+  border: none;
+  background-color: #2f6f5e;
+  color: white;
+  cursor: pointer;
+}
+
+.main-nav button:hover {
+  background-color: #245548;
+}
+
+/* Home Page Columns */
+.three-column {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 30px;
+}
+
+.three-column section {
+  background-color: rgba(255, 255, 255, 0.92);
+  padding: 20px;
+  border-radius: 4px;
+}
+
+/* Secondary Pages */
+.content-area {
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.92);
+  margin: 20px;
+}
+
+/* Footer */
+.bottom-bar {
+  background-color: #1e3c32;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+}
