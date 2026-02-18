@@ -1,37 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Collections | Northwest Academic Museum</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noindex, nofollow">
-  <link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Museum Collections</title>
+
+  <!-- Site-wide CSS (keep yours if you already have one) -->
+  <link rel="stylesheet" href="../css/styles.css" />
+
+  <!-- Collections-specific CSS -->
+  <link rel="stylesheet" href="../css/collections.css" />
 </head>
 
 <body>
+  <!-- KEEP your existing main navigation/header here -->
+  <!-- Example (do not duplicate if you already have it): -->
+  <!--
+  <header> ... main nav ... </header>
+  -->
 
-  <header class="top-bar">
-    <h1>Museum Collections</h1>
-  </header>
+  <main class="collections-page">
+    <nav class="collections-subnav" aria-label="Collections sections">
+      <button type="button" class="subnav-btn" onclick="showSection('archeology')">Archeology</button>
+      <button type="button" class="subnav-btn" onclick="showSection('anthropology')">Anthropology</button>
+    </nav>
 
-  <nav class="main-nav">
-    <button onclick="location.href='../index.html'">Home</button>
-    <button onclick="location.href='staff.html'">Staff</button>
-    <button onclick="location.href='collections.html'">Collections</button>
-    <button>Archaeology</button>
-    <button>Anthropology</button>
-    <button>History</button>
-  </nav>
+    <!-- ===================== -->
+    <!-- ARCHEOLOGY SECTION     -->
+    <!-- ===================== -->
+    <section id="archeology" class="collection-section">
+      <h1 class="collections-title">Archeology Collection</h1>
+      <p class="collections-intro">
+        This section contains material artifacts documented by the Gathering Team. All entries are descriptive (not interpretive)
+        and formatted for analysis and exhibit planning.
+      </p>
 
-  <main class="content-area">
-    <p>
-      Collection galleries will be populated in a future phase of this academic project.
-    </p>
+      <!-- ITEM A1 -->
+      <article class="collection-item">
+        <img
+          src="../images/collections/arch_obsidian_spearpoint.png"
+          alt="Illustration of a dark obsidian spearpoint with chipped edges and a sharp triangular form."
+          class="collection-image"
+        />
+
+        <div class="collection-metadata">
+          <h2 class="item-name">Obsidian Spearpoint (Catalog A1)</h2>
+
+          <dl class="metadata-grid">
+            <dt>Name</dt><dd>Obsidian Spearpoint (Catalog A1)</dd>
+            <dt>Material</dt><dd>Volcanic glass (obsidian), trace mineral banding visible</dd>
+            <dt>Size/Weight/Shape</dt><dd>8.6 cm long; ~2.1 cm wide; ~28 g; triangular with slight basal notch</dd>
+            <dt>Estimated Age</dt><dd>Estimated 900–1200 CE (context layer association; no direct carbon sample)</dd>
+            <dt>Preservation State</dt><dd>Nearly complete; minor edge micro-chips; tip intact</dd>
+            <dt>Location Found</dt><dd>Ridge Terrace Site; grid unit N14/E07; 22–28 cm depth; dry soil matrix</dd>
+            <dt>Likely Purpose</dt><dd>Projectile point (spear or dart tip)</dd>
+            <dt>Evidence of Use</dt><dd>Edge micro-fractures near tip; minor polish along one cutting edge</dd>
+            <dt>Manufacture Clues</dt><dd>Pressure flake scars; consistent retouch; basal thinning suggests hafting preparation</dd>
+            <dt>Found With</dt><dd>Charcoal flecks, two pottery sherds, small basalt flakes within same level</dd>
+            <dt>Burial or Habitat Context</dt><dd>Open-air activity area; near fire-stained stones</dd>
+            <dt>Symbolism</dt><dd>Surface banding forms faint wave-like pattern; no engraved marks observed</dd>
+            <dt>Comparison</dt><dd>Resembles regional notched points documented in nearby terrace sites</dd>
+          </dl>
+        </div>
+      </article>
+
+      <!-- ITEM A2 -->
+      <article class="collection-item">
+        <img
+          src="../images/collections/arch_riverstone_lamp.png"
+          alt="Illustration of a shallow riverstone lamp with a dark soot stain in a carved bowl."
+          class="collection-image"
+        />
+
+        <div class="collection-metadata">
+          <h2 class="item-name">Riverstone Lamp Bowl (Catalog A2)</h2>
+
+          <dl class="metadata-grid">
+            <dt>Name</dt><dd>Riverstone Lamp Bowl (Catalog A2)</dd>
+            <dt>Material</dt><dd>Smooth riverstone (fine-grained basalt); soot residue present</dd>
+            <dt>Size/Weight/Shape</dt><dd>12.4 cm wide; 9.8 cm long; ~310 g; oval with shallow carved depression</dd>
+            <dt>Estimated Age</dt><dd>Estimated 700–1000 CE (layer association; soot sample pending)</dd>
+            <dt>Preservation State</dt><dd>Complete; surface worn; one edge nicked</dd>
+            <dt>Location Found</dt><dd>Cliff Shelter 3; alcove interior; 5 m from back wall; 12–16 cm depth</dd>
+            <dt>Likely Purpose</dt><dd>Oil/grease lamp or heating bowl</dd>
+            <dt>Evidence of Use</dt><dd>Dense soot staining in depression; rim darkened; faint residue film</dd>
+            <dt>Manufacture Clues</dt><dd>Depression shows pecking marks; outer surface naturally smoothed by water</dd>
+            <dt>Found With</dt><dd>Burned reed fragments, ash layer, and a cluster of animal bone fragments nearby</dd>
+            <dt>Burial or Habitat Context</dt><dd>Shelter hearth zone; repeated burning layers visible</dd>
+            <dt>Symbolism</dt><dd>No decoration; soot patterns form ringed stain consistent with repeated lighting</dd>
+            <dt>Comparison</dt><dd>Similar to lamp stones documented in other rock-shelter contexts</dd>
+          </dl>
+        </div>
+      </article>
+
+      <!-- ITEM A3 -->
+      <article class="collection-item">
+        <img
+          src="../images/collections/arch_shell_inlay_buckle.png"
+          alt="Illustration of a belt buckle-like plate with shell inlay strips set into a dark base material."
+          class="collection-image"
+        />
+
+        <div class="collection-metadata">
+          <h2 class="item-name">Shell-Inlay Waist Plate (Catalog A3)</h2>
+
+          <dl class="metadata-grid">
+            <dt>Name</dt><dd>Shell-Inlay Waist Plate (Catalog A3)</dd>
+            <dt>Material</dt><dd>Dark hardwood-like base (degraded), shell inlay strips, plant fiber impressions</dd>
+            <dt>Size/Weight/Shape</dt><dd>7.2 cm long; 4.0 cm wide; ~46 g; rounded rectangle with two perforations</dd>
+            <dt>Estimated Age</dt><dd>Estimated 1100–1400 CE (associated textile fragment dated in same layer)</dd>
+            <dt>Preservation State</dt><dd>Partial; base material cracked; inlay largely intact</dd>
+            <dt>Location Found</dt><dd>Midden edge; unit S03/W11; 38–44 cm depth; damp soil pocket</dd>
+            <dt>Likely Purpose</dt><dd>Clothing fastener / belt plate</dd>
+            <dt>Evidence of Use</dt><dd>Perforations smoothed from repeated cord abrasion; edge wear on corners</dd>
+            <dt>Manufacture Clues</dt><dd>Inset channels for shell; adhesive residue traces; drilled perforations</dd>
+            <dt>Found With</dt><dd>Textile fragment, small copper-green stain in soil, and bead fragments</dd>
+            <dt>Burial or Habitat Context</dt><dd>Domestic discard zone; near refuse layers</dd>
+            <dt>Symbolism</dt><dd>Inlay arranged in three parallel bands; no figurative imagery present</dd>
+            <dt>Comparison</dt><dd>Comparable to fasteners from coastal trade-linked sites</dd>
+          </dl>
+        </div>
+      </article>
+    </section>
+
+    <!-- ===================== -->
+    <!-- ANTHROPOLOGY SECTION   -->
+    <!-- ===================== -->
+    <section id="anthropology" class="collection-section" style="display:none;">
+      <h1 class="collections-title">Anthropology Collection</h1>
+      <p class="collections-intro">
+        This section contains human-associated traces and contextual remains. Descriptions focus on observable details,
+        documentation, and context notes (not narrative interpretation).
+      </p>
+
+      <!-- ITEM B1 -->
+      <article class="collection-item">
+        <img
+          src="../images/collections/anth_burial_beadwork.png"
+          alt="Illustration of small bead strands arranged beside a burial context sketch on a clipboard."
+          class="collection-image"
+        />
+
+        <div class="collection-metadata">
+          <h2 class="item-name">Burial Beadwork Cluster (Catalog B1)</h2>
+
+          <dl class="metadata-grid">
+            <dt>Name</dt><dd>Burial Beadwork Cluster (Catalog B1)</dd>
+            <dt>Material</dt><dd>Shell beads, stone micro-beads, degraded plant fiber cord remnants</dd>
+            <dt>Size/Weight/Shape</dt><dd>Cluster spread ~14 cm by 9 cm; beads 2–5 mm; total ~22 g</dd>
+            <dt>Estimated Age</dt><dd>Estimated 800–1200 CE (burial layer association; fiber sample too degraded)</dd>
+            <dt>Preservation State</dt><dd>Partial; cord mostly decayed; beads intact but scattered</dd>
+            <dt>Location Found</dt><dd>Burial context; east side of torso area; 64–70 cm depth; compact clay layer</dd>
+            <dt>Likely Purpose</dt><dd>Adornment (necklace/garment trim)</dd>
+            <dt>Evidence of Use</dt><dd>Bead holes show smoothing; some beads show edge rounding</dd>
+            <dt>Manufacture Clues</dt><dd>Consistent drilling; size sorting suggests planned patterning</dd>
+            <dt>Found With</dt><dd>Textile impression patch; two small pigment-stained stones nearby</dd>
+            <dt>Burial or Habitat Context</dt><dd>Formal burial; body position recorded in field notes; no coffin material observed</dd>
+            <dt>Symbolism</dt><dd>Beads include alternating light/dark materials suggesting intentional contrast pattern</dd>
+            <dt>Comparison</dt><dd>Similar bead sizes and drill style seen in adjacent burial features</dd>
+          </dl>
+        </div>
+      </article>
+
+      <!-- ITEM B2 -->
+      <article class="collection-item">
+        <img
+          src="../images/collections/anth_cranial_plaque.png"
+          alt="Illustration of a thin decorative plaque positioned near a skull diagram, with fine incised lines."
+          class="collection-image"
+        />
+
+        <div class="collection-metadata">
+          <h2 class="item-name">Incised Decorative Plaque (Catalog B2)</h2>
+
+          <dl class="metadata-grid">
+            <dt>Name</dt><dd>Incised Decorative Plaque (Catalog B2)</dd>
+            <dt>Material</dt><dd>Thin bone or ivory-like material (species undetermined), surface pigment trace</dd>
+            <dt>Size/Weight/Shape</dt><dd>6.1 cm long; 2.3 cm wide; ~9 g; narrow rectangle with rounded ends</dd>
+            <dt>Estimated Age</dt><dd>Estimated 1000–1300 CE (associated burial goods layer)</dd>
+            <dt>Preservation State</dt><dd>Partial; one corner missing; incisions visible</dd>
+            <dt>Location Found</dt><dd>Burial fill; near head area but not attached; 58–62 cm depth</dd>
+            <dt>Likely Purpose</dt><dd>Personal ornament or garment/strap fitting</dd>
+            <dt>Evidence of Use</dt><dd>Two small perforations show abrasion; surface polish on raised areas</dd>
+            <dt>Manufacture Clues</dt><dd>Fine incised lines; drilled perforations; edge smoothing suggests finishing</dd>
+            <dt>Found With</dt><dd>Bead fragments and a small ceramic token in same fill zone</dd>
+            <dt>Burial or Habitat Context</dt><dd>Burial context; soil shows distinct fill episodes in field profile</dd>
+            <dt>Symbolism</dt><dd>Incisions form repeating chevron motifs; no readable text present</dd>
+            <dt>Comparison</dt><dd>Motif resembles chevron patterns found on regional textile impressions</dd>
+          </dl>
+        </div>
+      </article>
+
+      <!-- ITEM B3 -->
+      <article class="collection-item">
+        <img
+          src="../images/collections/anth_bone_toolset.png"
+          alt="Illustration of a small set of bone tools laid out beside measurement calipers and labeled tags."
+          class="collection-image"
+        />
+
+        <div class="collection-metadata">
+          <h2 class="item-name">Bone Tool Set (Catalog B3)</h2>
+
+          <dl class="metadata-grid">
+            <dt>Name</dt><dd>Bone Tool Set (Catalog B3)</dd>
+            <dt>Material</dt><dd>Worked bone (multiple pieces), minor resin-like residue on one tip</dd>
+            <dt>Size/Weight/Shape</dt><dd>Three tools: 9.0 cm, 7.4 cm, 6.8 cm; combined ~34 g; tapered points</dd>
+            <dt>Estimated Age</dt><dd>Estimated 600–900 CE (habitation layer; ash lens association)</dd>
+            <dt>Preservation State</dt><dd>Partial set; two tips intact; one tip blunted</dd>
+            <dt>Location Found</dt><dd>Habitation floor; near storage pit edge; unit W09/N02; 18–22 cm depth</dd>
+            <dt>Likely Purpose</dt><dd>Craft tools (piercing/etching/working fiber or hide)</dd>
+            <dt>Evidence of Use</dt><dd>Tip rounding and polish; faint scoring; residue on one point</dd>
+            <dt>Manufacture Clues</dt><dd>Cut marks near base; smoothing along shaft; consistent tapering</dd>
+            <dt>Found With</dt><dd>Clay spindle whorl fragment and burned plant fiber clumps nearby</dd>
+            <dt>Burial or Habitat Context</dt><dd>Domestic habitation surface; compacted floor layer</dd>
+            <dt>Symbolism</dt><dd>No decorative carving; surface finish appears functional</dd>
+            <dt>Comparison</dt><dd>Similar to documented bone awls in regional household contexts</dd>
+          </dl>
+        </div>
+      </article>
+    </section>
+
+    <section class="ai-disclosure">
+      <h2>AI + Human Curation Statement</h2>
+      <p>
+        The content in this gallery was entirely created by AI under human direction. It was then curated, reviewed,
+        edited, and organized by a human before being published.
+      </p>
+      <p class="citation-note">
+        Citations: AI was used for concept development, artifact metadata drafting, and image generation prompts. Any
+        third-party images (if used) are credited by source name and URL in the project credits/README.
+      </p>
+    </section>
   </main>
 
-  <footer class="bottom-bar">
-    <p>This is a fictitious website created purely for academic purposes.</p>
-  </footer>
+  <!-- KEEP your existing footer here if you have one -->
 
+  <script src="../js/collections.js"></script>
 </body>
 </html>
